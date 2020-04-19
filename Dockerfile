@@ -9,10 +9,10 @@ LABEL "com.github.actions.description"="Check ansible role or playbook with Alpi
 LABEL "com.github.actions.icon"="aperture"
 LABEL "com.github.actions.color"="green"
 
-RUN apk upgrade && apk add \
-    python3 \
-    python3-pip \
-    git
+RUN apk upgrade
+RUN apk add python3
+RUN apk add python3-pip
+RUN apk add git
 
 RUN pip3 install setuptools && pip3 install ansible
 
