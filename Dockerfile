@@ -13,7 +13,6 @@ LABEL "com.github.actions.color"="green"
 RUN apk add  --no-cache --update python3
 RUN apk add  --no-cache --update ansible
 RUN apk add  --no-cache --update git
-RUN apk add  --no-cache --update bash
 
 RUN ansible --version
 
