@@ -9,11 +9,9 @@ LABEL "com.github.actions.description"="Check ansible role or playbook with Alpi
 LABEL "com.github.actions.icon"="aperture"
 LABEL "com.github.actions.color"="green"
 
-RUN apk add  --no-cache --update python3
-RUN apk add  --no-cache --update python3-pip
-RUN apk add  --no-cache --update git
+RUN apk add  --no-cache --update py-pip
 
-RUN pip3 install setuptools && pip3 install ansible
+RUN pip install setuptools && pip install ansible
 
 RUN ansible --version
 
