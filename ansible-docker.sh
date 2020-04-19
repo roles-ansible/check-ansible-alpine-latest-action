@@ -1,4 +1,4 @@
-#! /bin/ash
+#! /bin/bash
 
 set -Eeuo pipefail
 set -x
