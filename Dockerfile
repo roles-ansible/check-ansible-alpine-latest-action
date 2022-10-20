@@ -11,6 +11,7 @@ LABEL "com.github.actions.icon"="aperture"
 LABEL "com.github.actions.color"="green"
 
 
+# hadolint ignore=DL3018
 RUN apk add  --no-cache --update python3 \
   && apk add  --no-cache --update ansible \
   && apk add  --no-cache --update git \
