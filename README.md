@@ -28,7 +28,7 @@ jobs:
 
       - name: ansible check with alpine:latest
         # optionally replace "v1" with any valid git ref (branch, release, commit...)
-        uses: roles-ansible/check-ansible-alpine-latest-action@master
+        uses: roles-ansible/check-ansible-alpine-latest-action@v1
         with:
           targets: "/github/workspace"
           #  [required]
